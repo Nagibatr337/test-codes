@@ -1,1 +1,12 @@
+import pandas as pd
 
+article = pd.read_csv('spiski_na_kastraciy.csv', delimiter=';')
+
+names = ['name', 'IP', 'IQ','age']
+
+
+
+article.to_csv("spiski_na_kastraciy.csv", index=False, sep=";")
+print(article.at[0, 'name'])
+def read_slot(self):
+    article.iloc[2, 2] = "hi"
